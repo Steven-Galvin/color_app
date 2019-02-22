@@ -1,0 +1,12 @@
+.circle {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  border: 1px black solid;
+  border-radius: 100px;
+}
+
+canvas {
+  margin: 10px;
+}
