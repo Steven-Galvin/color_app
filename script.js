@@ -114,6 +114,14 @@ window.onload = function() {
     RGBValues.style.color = bgColor
     body.style.color = backgroundValue
     body.style.backgroundColor = bgColor
+
+
+    var headerBG = HSVtoRGB(h, 0.1, 0.9)
+    var headerFont = HSVtoRGB(bgH, 0.8, 0.2)
+    var headerFontColor = `rgb(${headerFont.r}, ${headerFont.g}, ${headerFont.b})`
+    var header = document.getElementById('header')
+    header.style.backgroundColor = `rgb(${headerBG.r}, ${headerBG.g}, ${headerBG.b})`
+    root.style.setProperty('--header-font', headerFontColor);
   }
 
   /* Update the saturation slider value, the RGB/HSV values, the background color, and the slider thumb color (each time you drag the slider handle) */
